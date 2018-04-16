@@ -10,8 +10,8 @@ def index():
 @app.route('/send_sms/')
 def outbound_sms():
 
-	auth_id = 'MAMGI5OTMXZTI0MMVMOG'
-	auth_token = 'ZThmMzRjN2I1Y2U0ZWY2MDRkOTUxNTMzZjYzMzlh'
+	auth_id = 'AUTH_ID_HERE'
+	auth_token = 'AUTH_TOKEN_HERE'
 	#from_number= request.form.get("fromnumber")
 	#to_number= request.form.get("tonumber")
 	#content= request.form.get("text")
