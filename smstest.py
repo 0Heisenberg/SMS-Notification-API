@@ -17,13 +17,13 @@ def outbound_sms():
 	#content= request.form.get("text")
 	# import pdb;pdb.set_trace()
 
-	client = plivo.RestClient(auth_id = 'MAMGI5OTMXZTI0MMVMOG', auth_token = 'ZThmMzRjN2I1Y2U0ZWY2MDRkOTUxNTMzZjYzMzlh')
+	client = plivo.RestClient(auth_id = 'AUTH_ID_HERE', auth_token = 'AUTH_TOKEN_HERE')
 
 	try:
 		response = client.messages.create(
-			src = '1234567', # Sender's phone number with country code
-	    	dst = '919106054324', # Receiver's phone Number with country code
-	    	text = 'You recived a call at +14153014707',
+			src = 'SRC_NUM', # Sender's phone number with country code
+	    	dst = 'DST_NUM', # Receiver's phone Number with country code
+	    	text = 'Enter your message here..',
 		)
 	#response = p.send_message(params)
 	# Prints the complete response
